@@ -22,3 +22,11 @@ void deadline::set_description(std::string new_description) {
 QDate deadline::get_date() {
     return this->date;
 }
+
+QDate deadline::get_date() {
+    return this->creation_date;
+}
+
+void deadline::set_description(QDate new_creation_date) {
+    this->creation_date = new_creation_date;
+}
