@@ -41,3 +41,14 @@ void test_engine::test4() {
     test_manager.delete_deadline(test_dedline.get_name());
     assert(test_manager.get_deadlines().empty());
 }
+
+void test_engine::test5() {
+    deadline_manager test_manager = deadline_manager();
+    QDate date = QDate(2022, 12, 21);
+    std::string name = "Random deadline";
+    std::string description = "Сделать дз по se";
+    deadline test_dedline = deadline(date, name, description);
+    test_manager.refresh(QDate(2021, 12, 21));
+    assert(test_manager.get_deadlines().empty());
+    assert(!test_manager.get_missed_deadlines().empty());
+}

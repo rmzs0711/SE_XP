@@ -10,6 +10,7 @@ public:
     void test2();
     void test3();
     void test4();
+    void test5();
 };
 
 #endif // TEST_ENGINE_H

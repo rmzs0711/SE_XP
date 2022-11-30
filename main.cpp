@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
     tests.test2();
     tests.test3();
     tests.test4();
+    tests.test5();
     MainWindow w;
     w.show();
     return a.exec();

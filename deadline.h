@@ -8,6 +8,7 @@ class deadline
 public:
     deadline(QDate date, std::string name, std::string description);
     std::string get_name();
+    QDate get_date();
 private:
     QDate date;
     std::string name;
