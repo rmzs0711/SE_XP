@@ -28,6 +28,8 @@ private slots:
     void on_EmailButton_clicked();
     void on_button_for_delete_clicked();
 
+    void on_Button_for_change_description_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

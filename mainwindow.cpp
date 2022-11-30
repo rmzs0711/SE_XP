@@ -41,3 +41,15 @@ void MainWindow::on_button_for_delete_clicked()
     }
     manager.delete_deadline(name);
 }
+
+void MainWindow::on_Button_for_change_description_clicked()
+{
+    std::string name = ui->name_of_changed_deadline->text().toStdString();
+    for(size_t i = 0; i < current_deadlines.size(); i++) {
+        if (current_deadlines[i]->text().toStdString() == name) {
+            manager.get_deadlines()[i].set_description(ui->for_new_description->text().toStdString());
+            break;
+        }
+    }
+    manager.delete_deadline(name);
+}
