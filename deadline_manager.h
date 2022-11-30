@@ -10,7 +10,7 @@ class deadline_manager
 public:
     deadline_manager();
     void add(deadline deadline);
-    std::vector<deadline> get_dedlines();
+    std::vector<deadline> get_deadlines();
     void init_mail(std::string);
     void delete_deadline(std::string name);
 private:

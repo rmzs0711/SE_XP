@@ -9,7 +9,7 @@ void deadline_manager::add(deadline deadline) {
     deadlines.push_back(deadline);
 }
 
-std::vector<deadline> deadline_manager::get_dedlines() {
+std::vector<deadline> deadline_manager::get_deadlines() {
     return this->deadlines;
 }
 

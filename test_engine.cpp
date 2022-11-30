@@ -12,8 +12,8 @@ void test_engine::test1() {
     QDate date = QDate(2022, 12, 21);
     std::string name = "Random deadline";
     std::string description = "Сделать дз по se";
-    deadline test_dedline = deadline(date, name, description);
-    assert(test_dedline.get_name() == name);
+    deadline test_deadline = deadline(date, name, description);
+    assert(test_deadline.get_name() == name);
 }
 
 void test_engine::test2() {
@@ -21,9 +21,9 @@ void test_engine::test2() {
     QDate date = QDate(2022, 12, 21);
     std::string name = "Random deadline";
     std::string description = "Сделать дз по se";
-    deadline test_dedline = deadline(date, name, description);
-    test_manager.add(test_dedline);
-    assert(test_manager.get_dedlines().size() == 1);
+    deadline test_deadline = deadline(date, name, description);
+    test_manager.add(test_deadline);
+    assert(test_manager.get_deadlines().size() == 1);
 }
 
 void test_engine::test3() {
@@ -37,7 +37,7 @@ void test_engine::test4() {
     QDate date = QDate(2022, 12, 21);
     std::string name = "Random deadline";
     std::string description = "Сделать дз по se";
-    deadline test_dedline = deadline(date, name, description);
-    test_manager.delete_deadline(test_dedline.get_name());
-    assert(test_manager.get_dedlines().empty());
+    deadline test_deadline = deadline(date, name, description);
+    test_manager.delete_deadline(test_deadline.get_name());
+    assert(test_manager.get_deadlines().empty());
 }
