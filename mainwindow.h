@@ -17,7 +17,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    int test();
 private:
     deadline_manager manager = deadline_manager();
     QVector<QPushButton*> current_deadlines = QVector<QPushButton*>();

@@ -14,11 +14,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-int MainWindow::test() {
-
-}
-
 void MainWindow::on_pushButton_2_clicked()
 {
     manager.add(deadline(ui->dateTimeEdit->date(), ui->line_for_name->text().toStdString(), ui->line_for_description->text().toStdString()));
@@ -31,8 +26,6 @@ void MainWindow::on_pushButton_2_clicked()
 
 void MainWindow::on_EmailButton_clicked()
 {
-//    assert(ui->lineEdit->text().size() > 0);
-
     manager.init_mail(ui->lineEdit->text().toStdString());
     ui->lineEdit->setText("");
 }
