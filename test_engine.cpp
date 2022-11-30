@@ -58,6 +58,6 @@ void test_engine::test6() {
     std::string name = "Random deadline";
     std::string description = "Сделать дз по se";
     deadline test_deadline = deadline(date, name, description);
-    test_deadline.set_description("Поправить дз по se")
-    assert(test_deadline.get_description() == "Поправить дз по se");
+    test_deadline.set_description("Поправить дз по se");
+    assert(test_deadline.get_description().compare("Поправить дз по se"));
 }

@@ -23,10 +23,10 @@ QDate deadline::get_date() {
     return this->date;
 }
 
-QDate deadline::get_date() {
+QDate deadline::get_creation_date() {
     return this->creation_date;
 }
 
-void deadline::set_description(QDate new_creation_date) {
+void deadline::set_creation_date(QDate new_creation_date) {
     this->creation_date = new_creation_date;
 }
