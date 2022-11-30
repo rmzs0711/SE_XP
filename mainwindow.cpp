@@ -23,7 +23,7 @@ void MainWindow::on_pushButton_2_clicked()
 {
     manager.add(deadline(ui->dateTimeEdit->date(), ui->line_for_name->text().toStdString(), ui->line_for_description->text().toStdString()));
     QPushButton *button = new QPushButton(
-                QString::fromStdString(manager.get_dedlines()[manager.get_dedlines().size() - 1].get_name())
+                QString::fromStdString(manager.get_deadlines()[manager.get_deadlines().size() - 1].get_name())
             );
     current_deadlines.append(button);
     ui->verticalLayout->addWidget(current_deadlines[current_deadlines.size() - 1]);
