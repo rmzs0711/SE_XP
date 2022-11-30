@@ -52,3 +52,12 @@ void test_engine::test5() {
     assert(test_manager.get_deadlines().empty());
     assert(!test_manager.get_missed_deadlines().empty());
 }
+
+void test_engine::test6() {
+    QDate date = QDate(2022, 12, 21);
+    std::string name = "Random deadline";
+    std::string description = "Сделать дз по se";
+    deadline test_deadline = deadline(date, name, description);
+    test_deadline.set_description("Поправить дз по se")
+    assert(test_deadline.get_description() == "Поправить дз по se");
+}

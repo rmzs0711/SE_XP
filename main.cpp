@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
     tests.test3();
     tests.test4();
     tests.test5();
+    tests.test6();
     MainWindow w;
     w.show();
     return a.exec();

@@ -11,6 +11,7 @@ public:
     void test3();
     void test4();
     void test5();
+    void test6();
 };
 
 #endif // TEST_ENGINE_H
