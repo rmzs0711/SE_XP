@@ -21,7 +21,7 @@ int MainWindow::test() {
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    manager.add(dedline(ui->dateTimeEdit->date(), ui->line_for_name->text().toStdString(), ui->line_for_description->text().toStdString()));
+    manager.add(deadline(ui->dateTimeEdit->date(), ui->line_for_name->text().toStdString(), ui->line_for_description->text().toStdString()));
     QPushButton *button = new QPushButton(
                 QString::fromStdString(manager.get_dedlines()[manager.get_dedlines().size() - 1].get_name())
             );

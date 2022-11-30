@@ -3,7 +3,7 @@
 
 #include <QPushButton>
 #include <QMainWindow>
-#include <dedline_manager.h>
+#include <deadline_manager.h>
 #include <QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
@@ -19,7 +19,7 @@ public:
     ~MainWindow();
     int test();
 private:
-    dedline_manager manager = dedline_manager();
+    deadline_manager manager = deadline_manager();
     QVector<QPushButton*> current_deadlines = QVector<QPushButton*>();
     QVBoxLayout *layout_for_deadlines;
 

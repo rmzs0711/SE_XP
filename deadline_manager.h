@@ -1,20 +1,20 @@
 #ifndef DEDLINE_MANAGER_H
 #define DEDLINE_MANAGER_H
 
-#include <dedline.h>
+#include <deadline.h>
 #include <vector>
 
 
-class dedline_manager
+class deadline_manager
 {
 public:
-    dedline_manager();
-    void add(dedline deadline);
-    std::vector<dedline> get_dedlines();
+    deadline_manager();
+    void add(deadline deadline);
+    std::vector<deadline> get_dedlines();
     void init_mail(std::string);
     void delete_deadline(std::string name);
 private:
-std::vector<dedline> deadlines;
+std::vector<deadline> deadlines;
 std::string mail;
 };
 

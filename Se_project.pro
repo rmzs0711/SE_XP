@@ -9,15 +9,15 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    dedline.cpp \
-    dedline_manager.cpp \
+    deadline.cpp \
+    deadline_manager.cpp \
     main.cpp \
     mainwindow.cpp \
     test_engine.cpp
 
 HEADERS += \
-    dedline.h \
-    dedline_manager.h \
+    deadline.h \
+    deadline_manager.h \
     mainwindow.h \
     test_engine.h
 
